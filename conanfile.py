@@ -159,7 +159,7 @@ class KnowhereConan(ConanFile):
         self.requires("protobuf/5.27.0@milvus/dev#42f031a96d21c230a6e05bcac4bdd633", force=True, override=True)
         self.requires("lz4/1.10.0#982d9b673900f665a1da109e09c17cab", force=True, override=True)
         if self.settings.os == "Linux":
-            self.requires("liburing/2.8", force=True, override=True)
+            self.requires("liburing/2.15", force=True, override=True)
         self.requires("fmt/12.1.0", force=True, override=True)
         self.requires("libevent/2.1.12#95065aaefcd58d3956d6dfbfc5631d97")
         self.requires("grpc/1.67.1@milvus/dev#efeaa484b59bffaa579004d5e82ec4fd")
